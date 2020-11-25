@@ -18,10 +18,12 @@ public class MySystemPause : MonoBehaviour
             if (gameIsPaused)
             {
                 Time.timeScale = 0f;
+                Debug.LogWarning("Game pausado");
             }
             else
             {
                 Time.timeScale = 1f;
+                Debug.LogWarning("Game despausado");
             }
         }
     }
